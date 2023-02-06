@@ -1,0 +1,39 @@
+@import '../../reset.css';
+
+body{
+    background-color: var(--gray_blue);
+}
+
+header{
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .dados_carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .dados_carrinho p{
+    display: none;
+}
+
+header .dados_carrinho span{
+    color: var(--gray_light);
+}
+
+header .dados_carrinho span{
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        max-width: 950px;
+    }
+}

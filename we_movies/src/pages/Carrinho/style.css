@@ -1,0 +1,205 @@
+@import '../../reset.css';
+
+.container_cart{
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px;
+    background-color: var(--gray_blue);
+}
+
+.container_cart .bg_shopping{
+    width: 70%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 50px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.container_cart .bg_shopping:nth-child(1){
+    padding: 10px;
+}
+
+.container_cart .bg_shopping h3{
+    text-align: center;
+}
+
+/*-*/
+.container_cart .bg_shopping .w33{
+    display: flex;
+    gap: 5px;
+    border-bottom: 1px solid var(--gray_light);
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.container_cart .bg_shopping .w33 div{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 3px;
+}
+
+.container_cart .bg_shopping .w33 .count{
+    position: relative;
+    margin-left: 75px;
+    bottom: 30px;
+    height: 20px;
+}
+
+.container_cart .bg_shopping .rTotal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container_cart .bg_shopping .rTotal p{
+    width: 200px;
+    text-align: end;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container_cart .bg_shopping:nth-child(1){
+    padding: 20px;
+}
+
+.container_cart .bg_shopping .w33 .rCollumn{
+    flex-direction: column;
+    position: relative;
+    bottom: 41px;
+    left: 28px;
+}
+.container_cart .bg_shopping .w33 div .off{
+    display: none;
+}
+
+.container_cart .bg_shopping .w33 div .trash{
+    position: relative;
+    left: 235px;
+    bottom: 130px;
+}
+
+.container_cart .bg_shopping .w33 div button{
+    border: none;
+    background-color: var(--white);
+}
+
+.container_cart .bg_shopping .w33 div span{
+    display: none;
+}
+
+.container_cart .bg_shopping .w33 p{
+    width: 75px;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container_cart .bg_shopping .w33 p:nth-child(1){
+    width: 75px;
+    text-align: center;
+}
+
+.container_cart .bg_shopping .w33 p span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.container_cart .bg_shopping .gray{
+    color: var(--gray_light);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container_cart .bg_shopping .w33 input{
+    width: 30px;
+    border: 1px solid var(--border-input);
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .container_cart .bg_shopping{
+      width: 80%;
+      max-width: 950px;
+    }
+    .container_cart .bg_shopping .w33{
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .container_cart .bg_shopping .w33 .rTitle{
+        position: relative;
+        height: 50px;
+        top: 40px;
+        right: 55px;
+    }
+    .container_cart .bg_shopping:nth-child(1){
+        padding: 20px;
+    }
+    .container_cart .bg_shopping .w33 div{
+        flex-wrap: wrap;
+    }
+    .container_cart .bg_shopping .w33 div .gray{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 30px;
+    }
+    .container_cart .bg_shopping .rTotal{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .container_cart .bg_shopping .rTotal p{
+        text-align: end;
+    }
+    .container_cart .bg_shopping .rTotal p{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .container_cart .bg_shopping .rTotal p> span{
+        font-size: 14px;
+    }
+    .container_cart .bg_shopping .w33 div{
+        justify-content: center;
+        align-items: center;
+    }
+    .container_cart .bg_shopping .w33 .img_movie{
+        position: relative;
+        bottom: 23px;
+    }
+    .container_cart .bg_shopping .w33 .count {
+        margin-left: 0;
+        bottom: 0;
+        height: 0;
+    }
+    .container_cart .bg_shopping .w33 .rCollumn{
+        flex-direction: row;
+        bottom: 0;
+        left: 0;
+    }
+    .container_cart .bg_shopping .w33 div .trash{
+        position: relative;
+        top: 55px;
+        bottom: 0;
+        left: 0;
+    }
+
+
+  }

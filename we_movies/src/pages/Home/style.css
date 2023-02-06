@@ -1,0 +1,79 @@
+@import '../../reset.css';
+
+.container{
+    background-color: var(--gray_blue);
+}
+
+.container main{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.container main .cards{
+    width: 309px;
+    min-height: 305px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 4px;
+    background-color: var(--white);
+    gap: 10px;
+}
+
+.container main .cards> p{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--textos-card);
+}
+
+.container main .cards>p:nth-child(3){
+    font-size: 16px;
+    color: var(--textos-card-2);
+}
+
+.blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--blue_light);
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.green{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+      height: 100vh;
+    }
+  }

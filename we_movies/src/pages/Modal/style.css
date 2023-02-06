@@ -1,0 +1,39 @@
+@import '../../reset.css';
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px;
+    background-color: var(--gray_blue);
+}
+
+.container .bg_shopping{
+    width: 70%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 50px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .container .bg_shopping:nth-child(1){
+      width: 80%;
+      max-width: 960px;
+      padding: 64px;
+    }
+    .container .bg_shopping img{
+        width: 35%;
+    }
+
+    .btn{
+        width: 180px;
+    }
+
+  }
+
